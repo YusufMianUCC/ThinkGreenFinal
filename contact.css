@@ -1,0 +1,95 @@
+/* Navigation Bar */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center center;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #000000;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Chelsea Market;
+    color: #fff !important;
+    letter-spacing: 5px;
+}
+
+nav {
+    position: sticky;
+    float: right;
+    line-height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Chelsea Market;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+
+/* Contact */
+
+#contact {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    color: #555;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+    font-family: Chelsea Market;
+}
+
+#submit {
+    width: 100%;
+}
+
+h1::after {
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+#success-alert {
+    display: none;
+}
+
+#error-alert {
+    display: none;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Air Quality Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="air.css">
+
+    </head>
+
+    <!-- Navigation -->
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">THINK GREEN</a>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="air.html">Air Quality</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <br>
+        <br>
+        <br>
+
+
+        <!-- Information -->
+
+        <section id="air">
+            <div class="air">
+                <h1>What is Air Quality</h1>
+            </div>
+
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+            </head>
+
+            <body>
+                <center>
+                    <p>“Air quality” refers to the condition of the surrounding air in the atmosphere. Good air quality refers to the degree which the air is clean, clear and free from pollutants such as smoke, dust and smog as well as other gaseous impurities
+                        in the air. Air quality is determined by assessing a variety of pollution indicators. Good air quality is a requirement for preserving the exquisite balance of life on earth for humans, plants, animals and natural resources. Below
+                        is an image of the Air Quality Index:</p>
+                    <img src="img/7.png" style="width:90%; height: 550px;">
+                    <br>
+
+                    <section id="index">
+                        <div class="index">
+                            <h1>View Air Quality Data</h1>
+                        </div>
+
+                        <head>
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                        </head>
+
+                        <body>
+                            <center>
+                                <p>Below is a search bar that allows you to input any city in the world so that you can view their air quality data and make necessary interpretations of their air pollution situation is the years to come. There are numerous
+                                    variables related to climat echange presented once the city search has been completed. To better understand these variables, you may view this glossary of terms that I have put together:</p>
+                            </center>
+                        </body>
+
+                        <!-- <div class="form-group row"> -->
+                        <div class="md-form active-cyan-2 mb-3 w-75">
+                            <input class="form-control " type="text" id="cityInput" placeholder="Search your city">
+                        </div>
+                        <button onclick="submit()" class="btn btn-primary  w-75">View Data</button>
+    </div>
+    <!-- </div> -->
+    <ul id="output"></ul>
+    <div id="error" class="alert alert-danger  w-75" style="text-align: center;">
+        Invalid City - Try Inputting a Valid One!
+    </div>
+    <div id="success" class="alert alert-success  w-75">
+        Data Processed
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <table class="table table-responsive">
+                <table id="output-table" class="table">
+                    <tr>
+                        <th>City Name:</th>
+                        <th id="city-name"> </th>
+                    </tr>
+                    <tr>
+                        <td>Air Quality Status</td>
+                        <td id="air-quality-status"> </td>
+                    </tr>
+                    <tr>
+                        <td>Air Pollution Level</td>
+                        <td id="air-pollution-level"> </td>
+                    </tr>
+                    <tr>
+                        <td>Health Implications</td>
+                        <td id="health-implications"> </td>
+                    </tr>
+                    <tr>
+                        <td>Cautionary Statement</td>
+                        <td id="cautionary-statement"> </td>
+                    </tr>
+                </table>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="air.js"></script>
+    </center>
+    </body>
+
+</html>
