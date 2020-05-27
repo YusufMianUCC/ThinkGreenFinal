@@ -1,4 +1,3 @@
-
 function createNode(element) {
     return document.createElement(element);
 }
@@ -13,9 +12,9 @@ function submit() {
     error.style.display = "none";
     var li = document.createElement("li");
     var cityInputValue = document.getElementById("cityInput").value;
-    if (cityInputValue===''){
+    if (cityInputValue === '') {
         error.style.display = "block";
-        setTimeout(function(){ error.style.display = "none"; }, 5000);
+        setTimeout(function() { error.style.display = "none"; }, 5000);
         return;
     }
     let cityName = document.getElementById("city-name");
@@ -23,7 +22,7 @@ function submit() {
     const ul = document.getElementById('output');
     const table = document.getElementById('output-table');
     table.style.display = "none";
-    for(i = 6; i<table.getElementsByTagName("tr").length; i++){
+    for (i = 6; i < table.getElementsByTagName("tr").length; i++) {
         table.deleteRow(i);
     }
     ul.innerHTML = "";
@@ -31,7 +30,7 @@ function submit() {
     const url = 'http://api.waqi.info/feed/' + cityInputValue + '/?token=' + 'd3ca2eb3a6ed28b2ef18996d1aa4c99c29bb22a8';
     fetch(url)
         .then((resp) => resp.json())
-        .then(function (data) {
+        .then(function(data) {
             let info = data;
             // console.log(data)
             let li = [];
@@ -132,12 +131,12 @@ function submit() {
             // }
             document.getElementById("success").style.display = "block";
             table.style.display = "block";
-            setTimeout(function(){ document.getElementById("success").style.display = "none"; }, 5000);
+            setTimeout(function() { document.getElementById("success").style.display = "none"; }, 5000);
             return;
         })
-        .catch(function (err) {
+        .catch(function(err) {
             console.log(err);
             error.style.display = "block";
-            setTimeout(function(){ error.style.display = "none"; }, 5000);
+            setTimeout(function() { error.style.display = "none"; }, 5000);
         });
 }
